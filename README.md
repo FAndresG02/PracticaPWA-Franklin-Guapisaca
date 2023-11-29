@@ -1,6 +1,6 @@
 ## Ejecución en el localhost
 
-Para ejecutar la página el local host ejecute el comando `ng serve --o`
+Para ejecutar la página en el local host ejecute el comando `ng serve --o`
 
 ## Ejecución mediante URL en pc
 
