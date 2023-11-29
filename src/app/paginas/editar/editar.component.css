@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Formulario */
+.actualizarN {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
+    url(libro.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 162px 250px;
+}
+
+form {
+  max-width: 1200px; 
+  margin: auto; 
+  border-radius: 8px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100%; 
+}
+
+.txtCaja {
+  width: 100%;
+  color: white;
+}
+
+.botonD,
+.botonE {
+  background: linear-gradient(to right, #654321, #CDBA96);
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px; /* Añade un espacio entre los botones */
+}
+
+.botonD:hover,
+.botonE:hover {
+  background: linear-gradient(to right, #CDBA96, #654321);
+}
+
+.datos {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+@media screen and (max-width: 768px) {
+  .actualizarN {
+    padding: 20% 10%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input,
+  .botonD,
+  .botonE,
+  .datos {
+    padding: 10px; /* Ajusta el tamaño del padding para pantallas más pequeñas */
+  }
+}
+

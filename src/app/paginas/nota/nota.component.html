@@ -1,0 +1,21 @@
+<header class="header">
+
+    <div class="header2 contenido">
+
+        <h1>Escribe tus Notas</h1>
+
+    </div>
+</header>
+
+<form  class="RegistarNota">
+    <label class="txtCaja" for="txtNombre">Nombre</label>
+    <input class="datos" id="txtNombre" name="txtNombre" [(ngModel)]="nota.nombre"/>
+    <label class="txtCaja" for="txtNota">Nota</label>
+    <input class="datos" id="txtNota" name="txtNota" [(ngModel)]="nota.nota"/>
+    <label class="txtCaja" for="txtFecha">Fecha</label>
+    <input class="datos" type="date" id="txtFecha" name="txtFecha" [(ngModel)]="nota.fecha"/>
+    <button class="guardarN" (click)="guardarN()">Guardar</button>
+</form>
+  
+
+<!--<button (click)="listarN()">Mostrar notas</button>-->

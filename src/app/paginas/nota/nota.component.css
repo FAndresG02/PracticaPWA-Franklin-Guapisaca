@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;  
+}
+
+.contenido{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header{
+  background-image: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+  ), url(fondoAtras.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.header2{
+  text-align: center;
+}
+
+.header2 h1{
+  font-size: 75px;
+  line-height: 80px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/*formulario*/
+/* Estilos para los elementos de registro y búsqueda */
+
+form {
+  margin: 20px;
+  padding: 150px;
+  border-radius: 8px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.txtCaja{
+  width: 22.8%; 
+  color: black;
+}
+
+
+.guardarN {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(to right, #654321, #CDBA96);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+.guardarN:hover {
+  background: linear-gradient(to right, #CDBA96, #654321);
+}
+
+.datos {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+
+/* responsive */
+
+@media(max-width: 991px){
+
+  /* header*/
+
+  .menu{
+      padding: 30px; 
+  }
+
+  .menu .barraN{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: block;
+  }
+
+  .menu .barraN ul li{
+      width: 100%;
+  }
+
+  #menu:checked ~ .barraN{
+      display: none;
+  }
+
+  .header{
+      min-height: 0vh;
+  }
+
+  .header2{
+      padding: 100px 30px;
+  }
+
+}

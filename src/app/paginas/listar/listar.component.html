@@ -1,0 +1,35 @@
+<header class="header">
+
+  <div class="header2 contenido">
+
+      <h1>Gestiona tus Notas</h1>
+
+  </div>
+</header>
+
+<button class="botonD" (click)="listarN()">Mostrar notas</button> 
+<h3>Si desea actualizar la nota de click en el nombre de la nota</h3>
+
+<ul class="notas-list">
+  <li *ngFor="let nota of notaL | async" class="nota-item">
+  
+    <div class="nota-info">
+      <label for="nombre">Nombre de la nota:</label>
+      <a routerLink="/paginas/editar/{{nota.id}}" class="nota-link">
+        {{ nota.nombre }}
+      </a>
+    </div>
+
+    <div class="nota-info">
+      <label for="nota">Nota:</label>
+      <p class="nota-text">{{ nota.nota }}</p>
+    </div>
+
+    <div class="nota-info">
+      <label for="fecha">Fecha:</label>
+      <p class="nota-date">{{ formatFecha(nota.fecha) }}</p>
+    </div>
+  </li>
+</ul>
+
+  

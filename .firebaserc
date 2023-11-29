@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "pwapractica"
+  },
+  "targets": {
+    "pwapractica": {
+      "hosting": {
+        "practicaPWA": [
+          "pwapractica"
+        ]
+      }
+    }
+  }
+}

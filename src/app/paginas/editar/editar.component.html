@@ -1,0 +1,15 @@
+<form class="actualizarN" >
+    <h2>Actualizar nota</h2>
+    <label class="txtCaja" for="txtNombre">Actualizar nombre de la nota</label>
+    <input class="datos" id="txtNombre" name="txtNombre" [(ngModel)]="nota.nombre"/>
+    <label class="txtCaja" for="txtNota">Actualizar la nota</label>
+    <input class="datos" id="txtNota" name="txtNota" [(ngModel)]="nota.nota"/>
+    <label class="txtCaja" for="txtFecha">Actualizar la fecha</label>
+    <input class="datos" type="date" id="txtFecha" name="txtFecha" [(ngModel)]="nota.fecha"/>
+    <button class="botonD" (click)="actualizarN()">Actualizar</button>
+    <button class="botonD" (click)="eliminarN()">Eliminar</button>
+    <button class="botonD" (click)="cerrarN()">Cerrar nota</button>
+</form>
+  
+
+  
