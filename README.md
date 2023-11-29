@@ -4,7 +4,7 @@ Para ejecutar la página el local host ejecute el comando `ng serve --o`
 
 ## Ejecución mediante URL en pc
 
-En el navegador de preferencia chrome ingresar el link (https://pwapractica.web.app).
+En el navegador ingresar el link (https://pwapractica.web.app).
 
 ## Ejecución mediante aplicación de escriorio en pc
 
@@ -12,7 +12,7 @@ Después de ingresar al link (https://pwapractica.web.app) en la esquina superio
 
 ## Ejecución mediante URL en disposiitivos móviles
 
-En el navegador de preferencia chrome ingresar el link (https://pwapractica.web.app).
+En el navegador ingresar el link (https://pwapractica.web.app).
 
 ## Ejecución mediante aplicación de escriorio en dispositivos móviles
 
