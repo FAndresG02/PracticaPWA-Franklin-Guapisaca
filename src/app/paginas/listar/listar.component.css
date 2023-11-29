@@ -55,7 +55,6 @@ body{
 
 /*formulario*/
 
-/* Estilos generales */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -63,7 +62,6 @@ body {
   padding: 0;
 }
 
-/* Estilos de la lista de notas */
 .notas-list {
   list-style: none;
   padding: 0;
@@ -78,7 +76,6 @@ body {
   padding: 20px;
 }
 
-/* Estilos de la información de la nota */
 .nota-info {
   margin-bottom: 10px;
 }
@@ -89,24 +86,20 @@ label {
   margin-bottom: 5px;
 }
 
-/* Estilos del enlace de la nota */
 .nota-link {
   text-decoration: underline;
   color: #007bff;
 }
 
-/* Estilos del texto de la nota */
 .nota-text {
   margin: 0;
 }
 
-/* Estilos de la fecha de la nota */
 .nota-date {
   color: #888;
 }
 
-
-.botonD  {
+.botonD {
   display: block;
   width: 100%;
   padding: 10px;
@@ -126,19 +119,17 @@ label {
 h3 {
   color: black;
   text-align: center;
-  margin: 20px auto; /* Puedes ajustar el valor según sea necesario */
+  margin: 20px auto;
 }
+
 /* responsive */
-
-@media(max-width: 991px){
-
-  /* header*/
-
-  .menu{
+@media (max-width: 991px) {
+  /* header */
+  .menu {
       padding: 30px; 
   }
 
-  .menu .barraN{
+  .menu .barraN {
       position: absolute;
       top: 100%;
       left: 0;
@@ -147,20 +138,25 @@ h3 {
       display: block;
   }
 
-  .menu .barraN ul li{
+  .menu .barraN ul li {
       width: 100%;
   }
 
-  #menu:checked ~ .barraN{
+  #menu:checked ~ .barraN {
       display: none;
   }
 
-  .header{
+  .header {
       min-height: 0vh;
   }
 
-  .header2{
-      padding: 100px 30px;
+  .header2 {
+      padding: 30px;
   }
 
+  .header2 h1 {
+      font-size: 50px;
+      line-height: 55px;
+      margin-bottom: 20px;
+  }
 }
