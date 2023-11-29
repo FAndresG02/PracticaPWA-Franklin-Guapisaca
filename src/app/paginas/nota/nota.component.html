@@ -1,3 +1,4 @@
+<!-- Componentes de la cabeza-->
 <header class="header">
 
     <div class="header2 contenido">
@@ -7,6 +8,7 @@
     </div>
 </header>
 
+<!-- Formulario para registrar la nota-->
 <form  class="RegistarNota">
     <label class="txtCaja" for="txtNombre">Nombre</label>
     <input class="datos" id="txtNombre" name="txtNombre" [(ngModel)]="nota.nombre"/>
@@ -17,5 +19,23 @@
     <button class="guardarN" (click)="guardarN()">Guardar</button>
 </form>
   
+<footer class="footer">
+    <div class="footer2 contenido">
+        <div class="finalP">
+            <h3>Nombre</h3>
+            <ul>
+                <li><a href="#">Franklin Guapisaca</a></li>
+            </ul>
+        </div>
 
-<!--<button (click)="listarN()">Mostrar notas</button>-->
+        <div class="finalP">
+            <h3>UPS</h3>
+            <ul>
+                <li><a href="#">Programación y Plataformas Web</a></li>
+                <li><a href="#">5to ciclo</a></li>
+                <li><a href="#">Copyright 2023 sitio de prueba</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>

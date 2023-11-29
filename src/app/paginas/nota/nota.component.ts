@@ -12,6 +12,7 @@ import { PracticaService } from 'src/app/services/practica.service';
 export class NotaComponent {
   nota: Nota = new Nota()
 
+  //Inicialización de la variable nota 
   constructor(private router: Router, private practicaService: PracticaService) {
     let params = this.router.getCurrentNavigation()?.extras.queryParams
     if (params) {
@@ -20,10 +21,12 @@ export class NotaComponent {
     }
   }
 
+  //Comprueba si los campo de nombre, nota y fecha estan llenos
   private camposLlenos(): boolean {
     return !!this.nota.nombre && !!this.nota.nota && !!this.nota.fecha;
   }
 
+  //Guarda las notas y muestra las notas almacenadas
   guardarN(): void {
     if (!this.camposLlenos()) {
       alert('Por favor, completa todos los campos antes de guardar la nota.');
@@ -35,7 +38,4 @@ export class NotaComponent {
     alert('Nota guardada con éxito.');
   }
 
-  listarN(): void {
-    this.router.navigate(['paginas/listar'])
-  }
 }

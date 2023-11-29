@@ -122,6 +122,32 @@ h3 {
   margin: 20px auto;
 }
 
+/* footer */
+
+.footer{
+  padding: 100px 0;
+  background-color: #8d6e63;
+
+}
+
+.footer2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.finalP h3{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.finalP a{
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+}
+
 /* responsive */
 @media (max-width: 991px) {
   /* header */
@@ -158,5 +184,14 @@ h3 {
       font-size: 50px;
       line-height: 55px;
       margin-bottom: 20px;
+  }
+
+  .footer{
+    padding: 30px;  
+  }
+  
+  .footer2{
+    flex-direction: column;
+    text-align: center;
   }
 }

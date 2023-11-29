@@ -64,7 +64,7 @@ input {
   cursor: pointer;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 10px; /* Añade un espacio entre los botones */
+  margin-bottom: 10px; 
 }
 
 .botonD:hover,
@@ -87,6 +87,8 @@ h2 {
   margin: 0 auto; 
 }
 
+
+
 @media screen and (max-width: 768px) {
   .actualizarN {
     padding: 20% 10%;
@@ -100,7 +102,8 @@ h2 {
   .botonD,
   .botonE,
   .datos {
-    padding: 10px; /* Ajusta el tamaño del padding para pantallas más pequeñas */
+    padding: 10px; 
   }
+
 }
 

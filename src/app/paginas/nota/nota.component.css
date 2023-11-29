@@ -54,7 +54,6 @@ body{
 }
 
 /*formulario*/
-/* Estilos para los elementos de registro y búsqueda */
 
 form {
   margin: 20px;
@@ -65,8 +64,8 @@ form {
 
 input {
   margin-bottom: 10px;
-  padding: 15px; /* Aumenté el relleno para una mejor interacción táctil */
-  width: calc(100% - 30px); /* Ajusté el ancho para un mejor espaciado */
+  padding: 15px; 
+  width: calc(100% - 30px); 
   border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
@@ -90,9 +89,36 @@ input {
   font-size: 16px;
 }
 
+/* footer */
+
+.footer{
+  padding: 100px 0;
+  background-color: #8d6e63;
+
+}
+
+.footer2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.finalP h3{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.finalP a{
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+
 /* responsive */
 @media (max-width: 991px) {
-  /* header */
   .menu {
       padding: 30px;
   }
@@ -122,10 +148,19 @@ input {
       padding: 30px;
   }
 
-  /* Ajustes para pantallas más pequeñas */
+ 
   input,
   .guardarN {
       width: 100%;
-      margin-right: 0; /* Eliminé el margen a la derecha para un mejor espaciado */
+      margin-right: 0; 
+  }
+
+  .footer{
+    padding: 30px;  
+  }
+  
+  .footer2{
+    flex-direction: column;
+    text-align: center;
   }
 }
