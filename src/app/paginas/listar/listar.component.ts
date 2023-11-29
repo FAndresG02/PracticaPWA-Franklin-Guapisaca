@@ -29,9 +29,4 @@ export class ListarComponent {
     return `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
   }
 
-  //Lista las notas almacenadas
-  listarN(): void {
-    this.router.navigate(['./listar'], { relativeTo: this.route });
-  }
-
 } 
