@@ -1,3 +1,4 @@
+/*Diseño general de la página*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 html {
@@ -25,7 +26,7 @@ body{
   margin: 0 auto;
 }
 
-/* header */
+/* Diseño del encabezado de la página */
 
 .header{
   background-image: linear-gradient(
@@ -53,7 +54,7 @@ body{
   margin-bottom: 35px;
 }
 
-/*formulario*/
+/*Diseño de los elementos que muestran los datos de las notas*/
 
 body {
   font-family: 'Arial', sans-serif;
@@ -96,7 +97,7 @@ label {
 }
 
 .nota-date {
-  color: #888;
+  color: black;
 }
 
 .botonD {
@@ -106,14 +107,14 @@ label {
   border: none;
   border-radius: 5px;
   color: #fff;
-  background: linear-gradient(to right, #654321, #CDBA96);
+  background: linear-gradient(to right,  #8d6e63, #8d6e63);
   cursor: pointer;
   text-align: center;
   font-size: 16px;
 }
 
 .botonD:hover {
-  background: linear-gradient(to right, #CDBA96, #654321);
+  background: linear-gradient(to right, #654321, #CDBA96);
 }
 
 h3 {
@@ -122,7 +123,7 @@ h3 {
   margin: 20px auto;
 }
 
-/* footer */
+/* Diseño del píe de página */
 
 .footer{
   padding: 100px 0;
@@ -148,9 +149,8 @@ h3 {
   margin-bottom: 15px;
 }
 
-/* responsive */
+/* Parte responsiva */
 @media (max-width: 991px) {
-  /* header */
   .menu {
       padding: 30px; 
   }

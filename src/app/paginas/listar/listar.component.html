@@ -1,3 +1,4 @@
+<!-- Componentes del encabezado de la página-->
 <header class="header">
 
   <div class="header2 contenido">
@@ -7,9 +8,11 @@
   </div>
 </header>
 
+<!-- Boton de listar y título-->
 <button class="botonD" (click)="listarN()">Mostrar notas</button> 
 <h3>Si desea actualizar la nota de click en el nombre de la nota</h3>
 
+<!-- Muestra los datos de las notas y redirige a actualizar una nota -->
 <ul class="notas-list">
   <li *ngFor="let nota of notaL | async" class="nota-item">
   
@@ -32,6 +35,7 @@
   </li>
 </ul>
 
+<!-- Píe de página -->
 <footer class="footer">
   <div class="footer2 contenido">
       <div class="finalP">

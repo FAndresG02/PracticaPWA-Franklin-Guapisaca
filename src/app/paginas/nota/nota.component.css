@@ -1,3 +1,4 @@
+/*Diseño general de la página*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 html {
@@ -25,7 +26,7 @@ body{
   margin: 0 auto;
 }
 
-/* header */
+/* Diseño del encabezado de la página */
 
 .header{
   background-image: linear-gradient(
@@ -53,7 +54,7 @@ body{
   margin-bottom: 35px;
 }
 
-/*formulario*/
+/* Diseño del formulario registrar la nota*/
 
 form {
   margin: 20px;
@@ -83,13 +84,17 @@ input {
   border: none;
   border-radius: 5px;
   color: #fff;
-  background: linear-gradient(to right, #654321, #CDBA96);
+  background: linear-gradient(to right, #8d6e63, #8d6e63);
   cursor: pointer;
   text-align: center;
   font-size: 16px;
 }
 
-/* footer */
+.guardarN:hover {
+  background: linear-gradient(to right, #654321, #CDBA96);
+}
+
+/* Diseño para el píe de página */
 
 .footer{
   padding: 100px 0;
@@ -117,7 +122,7 @@ input {
 
 
 
-/* responsive */
+/* Parte responsiva */
 @media (max-width: 991px) {
   .menu {
       padding: 30px;

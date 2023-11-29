@@ -1,3 +1,4 @@
+/*Diseño general de la página*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 html {
@@ -21,7 +22,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Formulario */
+/* Diseño para el Formulario de actualizar la nota */
 .actualizarN {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)),
@@ -54,7 +55,7 @@ input {
 
 .botonD,
 .botonE {
-  background: linear-gradient(to right, #654321, #CDBA96);
+  background: linear-gradient(to right,  #8d6e63, #8d6e63);
   display: block;
   width: 100%;
   padding: 15px;
@@ -69,7 +70,7 @@ input {
 
 .botonD:hover,
 .botonE:hover {
-  background: linear-gradient(to right, #CDBA96, #654321);
+  background: linear-gradient(to right, #654321, #CDBA96);
 }
 
 .datos {
@@ -88,7 +89,7 @@ h2 {
 }
 
 
-
+/*Parte responsiva*/
 @media screen and (max-width: 768px) {
   .actualizarN {
     padding: 20% 10%;
