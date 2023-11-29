@@ -35,7 +35,7 @@ export class EditarComponent {
     this.PracticaService.obtenerNota(id).subscribe(data => this.asignarNota(data))
   }
 
-  //Actualiza la nota y renicia la instancia de la nota
+  //Actualiza la nota y reinicia la instancia de la nota
   actualizarN(){
     this.PracticaService.actualizar(this.nota)
     alert('Nota actualizada con exito')
@@ -48,7 +48,7 @@ export class EditarComponent {
     this.router.navigate(['paginas/listar'])
   }
 
-  //Elimina una nota medinate su id y reinicia la instancia de la nota y llama la método cerrarN
+  //Elimina una nota mediante su id y reinicia la instancia de la nota y llama al método cerrarN
   eliminarN() {
     if (this.nota.id) {
       this.PracticaService.eliminar(this.nota.id)

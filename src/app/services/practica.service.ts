@@ -26,7 +26,7 @@ export class PracticaService {
     return this.notaCollection.valueChanges();
   }
 
-  //Obtiene una nota en especifico de la colección y proporciona un id
+  //Obtiene una nota en específico de la colección y proporciona un, id
   obtenerNota(id: string){
     console.log('id', id)
     return this.firestore.doc('nota'+'/'+id).valueChanges()

@@ -7,6 +7,7 @@ import { GestionComponent } from './paginas/gestion/gestion.component';
 
 
 const routes: Routes = [
+  //Redirige a la ruta "/paginas/nota" cuando se ingresa a la aplicación 
   { path: "", redirectTo: "/paginas/nota", pathMatch: "full" },
   { path: "paginas/nota", component: NotaComponent },
   { path: "paginas/listar", component: ListarComponent },

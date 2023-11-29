@@ -21,7 +21,7 @@ export class NotaComponent {
     }
   }
 
-  //Comprueba si los campo de nombre, nota y fecha estan llenos
+  //Comprueba si los campo de nombre, nota y fecha están llenos
   private camposLlenos(): boolean {
     return !!this.nota.nombre && !!this.nota.nota && !!this.nota.fecha;
   }
