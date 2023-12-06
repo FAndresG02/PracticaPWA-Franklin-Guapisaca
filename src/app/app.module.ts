@@ -2,6 +2,8 @@ import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
@@ -30,6 +32,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   imports: [
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    AngularFirestoreModule.enablePersistence(),
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -47,3 +50,4 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
